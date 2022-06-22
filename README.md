@@ -49,7 +49,7 @@ Clone the repository on your machine. Open the project on your IDE and run it.
 
 ## Architecture
 This app uses Modularization with [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).
-![](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)
+![](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
 
 ## Contact
 Visit:
