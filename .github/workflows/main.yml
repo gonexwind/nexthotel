@@ -16,11 +16,14 @@ jobs:
         uses: actions/setup-java@v3.4.0
         with:
           distribution: 'zulu'
-          java-version: '11'          
+          java-version: '11'     
 
-      - name: Execute Gradle build
-        run: ./gradlew build
-        
+      - name: Gradle Build Action
+        uses: gradle/gradle-build-action@v2.2.1
+        with:
+          arguments: build     
+
+     
       - name: Upload APK
         uses: actions/upload-artifact@v3.1.0
         with:
