@@ -1,3 +1,8 @@
+@file:Suppress("SpellCheckingInspection", "SpellCheckingInspection", "SpellCheckingInspection",
+    "SpellCheckingInspection", "SpellCheckingInspection", "SpellCheckingInspection",
+    "SpellCheckingInspection"
+)
+
 package com.gonexwind.nexthotel
 
 import androidx.test.platform.app.InstrumentationRegistry
