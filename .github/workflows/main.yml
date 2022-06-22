@@ -18,13 +18,12 @@ jobs:
           distribution: 'zulu'
           java-version: '8'
 
-      - name: Gradle Build Action
-        uses: gradle/gradle-build-action@v2.2.1
+      - name: Assemble Debug
+        run: ./gradlew assembleDebug
         
-      - run: mkdir release
-      
       - name: Upload APK
         uses: actions/upload-artifact@v3.1.0
         with:
-          name: app
-          path: release/app-debug.apk
+          name: apk
+          path: app/build/outputs/apk/debug/**.apk
+          
