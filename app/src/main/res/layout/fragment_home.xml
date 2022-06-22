@@ -29,17 +29,18 @@
         app:layout_constraintTop_toBottomOf="parent"
         tools:listitem="@layout/item_hotel" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:contentDescription="@string/image_desc"
-        android:src="@drawable/ic_undraw_not_found"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="no-internet.json"
+        app:lottie_loop="true" />
 
     <TextView
         android:id="@+id/info"
@@ -51,6 +52,6 @@
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView" />
+        app:layout_constraintTop_toBottomOf="@id/lottieAnimationView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

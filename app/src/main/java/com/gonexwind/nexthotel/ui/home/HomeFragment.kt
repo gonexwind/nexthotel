@@ -51,7 +51,7 @@ class HomeFragment : Fragment() {
                         is Resource.Error -> {
                             binding.apply {
                                 progressBar.visibility = View.GONE
-                                imageView.visibility = View.VISIBLE
+                                lottieAnimationView.visibility = View.VISIBLE
                                 info.visibility = View.VISIBLE
                             }
                             toast(requireContext(), hotels.message.toString())

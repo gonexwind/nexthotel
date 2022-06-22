@@ -50,10 +50,10 @@ class FavoriteFragment : Fragment() {
 
     private fun showEmpty(isEmpty: Boolean) {
         if (isEmpty) {
-            binding.imageView.visibility = View.VISIBLE
+            binding.lottieAnimationView.visibility = View.VISIBLE
             binding.info.visibility = View.VISIBLE
         } else {
-            binding.imageView.visibility = View.GONE
+            binding.lottieAnimationView.visibility = View.GONE
             binding.info.visibility = View.GONE
         }
     }
