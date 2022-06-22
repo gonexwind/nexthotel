@@ -7,6 +7,8 @@ import com.gonexwind.core.data.local.room.HotelDatabase
 import com.gonexwind.core.data.remote.RemoteDataSource
 import com.gonexwind.core.data.remote.network.ApiService
 import com.gonexwind.core.domain.repository.IHotelRepository
+import net.sqlcipher.database.SQLiteDatabase
+import net.sqlcipher.database.SupportFactory
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 import retrofit2.Retrofit
@@ -23,12 +25,13 @@ val networkModule = module {
 }
 
 val databaseModule = module {
-    factory {
-        get<HotelDatabase>().hotelDao()
-    }
+    factory { get<HotelDatabase>().hotelDao() }
     single {
+        val passphrase: ByteArray = SQLiteDatabase.getBytes("INDONESIA".toCharArray())
+        val factory = SupportFactory(passphrase)
         Room.databaseBuilder(androidContext(), HotelDatabase::class.java, "Hotel.db")
             .fallbackToDestructiveMigration()
+            .openHelperFactory(factory)
             .build()
     }
 }

@@ -47,4 +47,7 @@ dependencies {
     kapt "androidx.room:room-compiler:2.4.2"
 
     api 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+
+    implementation "net.zetetic:android-database-sqlcipher:4.4.0"
+    implementation "androidx.sqlite:sqlite-ktx:2.2.0"
 }
