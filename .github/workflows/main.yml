@@ -20,9 +20,11 @@ jobs:
 
       - name: Gradle Build Action
         uses: gradle/gradle-build-action@v2.2.1
-
-      - name: Upload a Build Artifact
+        
+      - run: mkdir -p app/build/outputs/apk/debug
+      
+      - name: Upload APK
         uses: actions/upload-artifact@v3.1.0
         with:
-          name: 'release-artifacts'
-          path: release.apk
+          name: app
+          path: app/build/outputs/apk/debug/app-debug.apk
