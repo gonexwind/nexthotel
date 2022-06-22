@@ -18,14 +18,11 @@ jobs:
           distribution: 'zulu'
           java-version: '8'
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-
-      - name: Build with Gradle
-        run: ./gradlew build
+      - name: Gradle Build Action
+        uses: gradle/gradle-build-action@v2.2.1
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.0
         with:
-          name: release.apk
-          path: app/build/outputs/release.apk
+          name: 'release-artifacts'
+          path: release.apk
