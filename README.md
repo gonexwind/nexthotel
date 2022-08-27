@@ -1,4 +1,4 @@
-![](media/logo.png)
+<img src="media/logo.png" alt="next hotel logo" width="200"/>
 
 # **Next Hotel**
 
@@ -8,19 +8,11 @@ This repository is for Capstone Project in [Dicoding Academy](https://www.dicodi
 [![Platform](https://img.shields.io/badge/platform-Android-green.svg)](http://developer.android.com/index.html) |
 ![workflow badge](https://github.com/gonexwind/nexthotel/actions/workflows/main.yml/badge.svg)
 
-## Setup
-Clone the repository on your machine. Open the project on your IDE and run it.
-
-## About
+## Features
 - Explore Hotels
 - Favorite Hotels
 - Clean and Simple Material UI
 - Light Mode and Dark Mode 🌗
-
-## MAD Score
-
-![](media/mad_score.png)
-
 
 ## 📸 Screenshots
 ||||
@@ -46,11 +38,3 @@ Clone the repository on your machine. Open the project on your IDE and run it.
 - Lottie
 - Shimmer
 - Leak Canary
-
-## Architecture
-This app uses Modularization with [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).
-![](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
-
-## Contact
-Visit:
-- [gonexwind git's](https://github.com/gonexwind)
